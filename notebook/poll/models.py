@@ -12,3 +12,4 @@ class Poll(models.Model):
 class Vote(models.Model):
     created = models.DateTimeField(auto_created=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL)
+    poll = models.ForeignKey(Poll)
