@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>Polls</h1>
+
+<ul>
+    {% for poll in object_list %}
+    <li>{{ poll.title }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
